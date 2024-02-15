@@ -48,7 +48,6 @@ const theme = createTheme({
   shape: {
     borderRadius: "3px",
   },
-
   components: {
     MuiButton: {
       styleOverrides: {
@@ -71,6 +70,14 @@ const theme = createTheme({
           },
         },
       ],
+    },
+
+    MuiPaper: {
+      styleOverrides: {
+        root: {
+          boxShadow: "0px 0px 39px rgba(0,0,0, 0.05)",
+        },
+      },
     },
   },
 });
