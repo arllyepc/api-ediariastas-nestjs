@@ -29,8 +29,9 @@ export default function useVerificarProfissionais() {
 
       setBuscaFeita(true);
       setDiaristas(data.diaristas);
-      setDiaristaRestante(data.tamanhoPagina);
+      setDiaristaRestante(data.quantidade_diaristas);
     } catch (error) {
+      console.log(error);
       setError("CEP não encontrado");
     } finally {
       setCarregando(false);

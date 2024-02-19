@@ -1,11 +1,11 @@
 export interface UserShortInformationInterface {
-  nomeCompleto: string;
-  fotoUsuario?: string;
+  nome_completo: string;
+  foto_usuario?: string;
   reputacao?: number;
   cidade: string;
 }
 
 export interface BuscaCepResponse {
   diaristas: UserShortInformationInterface[];
-  tamanhoPagina: number;
+  quantidade_diaristas: number;
 }
